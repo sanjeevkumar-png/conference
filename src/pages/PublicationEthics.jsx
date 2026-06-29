@@ -2,12 +2,12 @@ import React from "react";
 
 const PublicationEthics = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-100 via-purple-200 to-purple-300 p-8">
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-blue-200 to-indigo-300 p-8">
       <div className="max-w-7xl mx-auto pt-20">
         {/* Publication Ethics Section */}
-        <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 p-1 rounded-lg shadow-lg">
+        <div className="bg-gradient-to-r from-blue-500 via-violet-500 to-emerald-400 p-1 rounded-lg shadow-lg">
           <div className="bg-white rounded-lg p-6">
-            <h2 className="text-3xl font-extrabold text-purple-800 mb-6 text-center">
+            <h2 className="text-3xl font-extrabold text-blue-800 mb-6 text-center">
               Publication Ethics
             </h2>
             <p className="text-lg text-gray-800 mb-4">
@@ -33,7 +33,7 @@ const PublicationEthics = () => {
               guidelines as written on the conference website{}
               <a
                 href="https://www.aicct.in"
-                className="text-purple-600 underline hover:text-purple-800"
+                className="text-blue-600 underline hover:text-blue-800"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -42,7 +42,7 @@ const PublicationEthics = () => {
               .
             </p>
 
-            <h3 className="text-2xl font-bold text-purple-700 mb-4">
+            <h3 className="text-2xl font-bold text-blue-700 mb-4">
               Publication and Authorship
             </h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg">
@@ -70,7 +70,7 @@ const PublicationEthics = () => {
               </li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-purple-700 mt-6 mb-4">
+            <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-4">
               Author's Responsibilities
             </h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg">
@@ -116,7 +116,7 @@ const PublicationEthics = () => {
               </li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-purple-700 mt-6 mb-4">
+            <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-4">
               Reviewers' Responsibilities
             </h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg">
@@ -147,7 +147,7 @@ const PublicationEthics = () => {
               </li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-purple-700 mt-6 mb-4">
+            <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-4">
               Editors' Responsibilities
             </h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg">
@@ -204,3 +204,5 @@ const PublicationEthics = () => {
 };
 
 export default PublicationEthics;
+
+

@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 const AuthorGuidlines = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-100 via-purple-200 to-purple-300 p-8">
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-blue-200 to-indigo-300 p-8">
       <div className="max-w-7xl mx-auto pt-20">
         {/* Author Guidelines Section */}
-        <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 p-1 rounded-lg shadow-lg">
+        <div className="bg-gradient-to-r from-blue-500 via-violet-500 to-emerald-400 p-1 rounded-lg shadow-lg">
           <div className="bg-white rounded-lg p-6">
-            <h2 className="text-3xl font-extrabold text-purple-800 mb-6 text-center">
+            <h2 className="text-3xl font-extrabold text-blue-800 mb-6 text-center">
               Submission
             </h2>
             <p className="text-lg text-gray-800 mb-4">
@@ -18,14 +18,14 @@ const AuthorGuidlines = () => {
               ensure a smooth submission process:
             </p>
 
-            <h3 className="text-2xl font-bold text-purple-700 mb-4">
+            <h3 className="text-2xl font-bold text-blue-700 mb-4">
               Accessing the Submission System:
             </h3>
             <p className="text-lg text-gray-800 mb-4">
               To submit your paper, access the Conference Management Toolkit
               (Microsoft CMT) via the provided{" "}
               <Link
-                className="text-purple-600 underline hover:text-purple-800"
+                className="text-blue-600 underline hover:text-blue-800"
                 to={
                   "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FAICCT2025%2FSubmission%2FIndex"
                 }
@@ -36,7 +36,7 @@ const AuthorGuidlines = () => {
               .
             </p>
 
-            <h3 className="text-2xl font-bold text-purple-700 mb-4">
+            <h3 className="text-2xl font-bold text-blue-700 mb-4">
               Paper Preparation:
             </h3>
             <p className="text-lg text-gray-800 mb-4">
@@ -50,7 +50,7 @@ const AuthorGuidlines = () => {
                 <a
                   href="/files/Word_Sample_template_8.25 x11_column.docx"
                   download
-                  className="text-purple-600 underline hover:text-purple-800"
+                  className="text-blue-600 underline hover:text-blue-800"
                 >
                   Click here to download
                 </a>
@@ -63,7 +63,7 @@ const AuthorGuidlines = () => {
                 <a
                   href="/files/AICCT.pdf"
                   download
-                  className="text-purple-600 underline hover:text-purple-800"
+                  className="text-blue-600 underline hover:text-blue-800"
                 >
                   Click here to download
                 </a>
@@ -75,7 +75,7 @@ const AuthorGuidlines = () => {
               to submit the following agreement to the conference email:
               <a
                 href="mailto:sanjeev.kumar@uniteduniversity.edu.in"
-                className="text-md text-purple-600 underline hover:text-purple-800"
+                className="text-md text-blue-600 underline hover:text-blue-800"
               >
                 sanjeev.kumar@uniteduniversity.edu.in
               </a>
@@ -91,7 +91,7 @@ const AuthorGuidlines = () => {
                 <a
                   href="/files/Copyright-Form.pdf"
                   download
-                  className="text-purple-600 underline hover:text-purple-800"
+                  className="text-blue-600 underline hover:text-blue-800"
                 >
                   Click here to download
                 </a>
@@ -102,7 +102,7 @@ const AuthorGuidlines = () => {
                 <a
                   href="/files/Permission-guidelines.zip"
                   download
-                  className="text-purple-600 underline hover:text-purple-800"
+                  className="text-blue-600 underline hover:text-blue-800"
                 >
                   Click here to download
                 </a>
@@ -117,7 +117,7 @@ const AuthorGuidlines = () => {
               accepted based on the review and conference chair’s decision
             </p>
 
-            <h3 className="text-2xl font-bold text-purple-700 mt-6 mb-4">
+            <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-4">
               Author's Guidelines:
             </h3>
             <p className="text-lg text-gray-800 mb-4"></p>
@@ -150,7 +150,7 @@ const AuthorGuidlines = () => {
               </li>
               <li>Maximum 5 authors allowed in the manuscript.</li>
             </ul>
-            <h3 className="text-2xl font-bold text-purple-700 mt-6 mb-4">
+            <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-4">
               Paper Submission:
             </h3>
             <p className="text-lg text-gray-800 mb-4">
@@ -160,7 +160,7 @@ const AuthorGuidlines = () => {
               Upload your paper in PDF format as per the provided submission
               instructions. Assign appropriate keywords to your submission.
             </p>
-            <h3 className="text-2xl font-bold text-purple-700 mt-6 mb-4">
+            <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-4">
               Review Process:
             </h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg">
@@ -212,7 +212,7 @@ const AuthorGuidlines = () => {
               </li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-purple-700 mt-6 mb-4">
+            <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-4">
               Mode of Presentation:
             </h3>
             <p className="text-lg text-gray-800 mb-4">
@@ -228,12 +228,12 @@ const AuthorGuidlines = () => {
               <a
                 href="/files/ppt-template.pptx"
                 download
-                className="text-purple-600 underline hover:text-purple-800"
+                className="text-blue-600 underline hover:text-blue-800"
               >
                 Click here to download
               </a>
             </p>
-            <h3 className="text-2xl font-bold text-purple-700 mt-6 mb-4">
+            <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-4">
               Revisions and Camera-Ready Submission:
             </h3>
             <p className="text-lg text-gray-800">
@@ -242,14 +242,14 @@ const AuthorGuidlines = () => {
               final camera-ready version of your paper by the specified
               deadline. .
             </p>
-            <h3 className="text-2xl font-bold text-purple-700 mt-6 mb-4">
+            <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-4">
               Microsoft CMT for Review:
             </h3>
             <p className="text-lg text-gray-800">
               The{" "}
               <a
                 href="/"
-                className="text-purple-600 underline hover:text-purple-800"
+                className="text-blue-600 underline hover:text-blue-800"
               >
                 Microsoft CMT service{" "}
               </a>
@@ -258,14 +258,14 @@ const AuthorGuidlines = () => {
               they bore all expenses, including costs for Azure cloud services
               as well as for software development and support. .
             </p>
-            <h3 className="text-2xl font-bold text-purple-700 mt-6 mb-4">
+            <h3 className="text-2xl font-bold text-blue-700 mt-6 mb-4">
               Contact Us:
             </h3>
             <p className="text-lg text-gray-800">
               For any queries, feel free to
               <a
                 href="/"
-                className="text-purple-600 underline hover:text-purple-800"
+                className="text-blue-600 underline hover:text-blue-800"
               >
                 {" "}
                 contact us
@@ -280,3 +280,5 @@ const AuthorGuidlines = () => {
 };
 
 export default AuthorGuidlines;
+
+

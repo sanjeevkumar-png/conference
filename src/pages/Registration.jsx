@@ -8,10 +8,10 @@ const Registration = () => {
   };
   const handleClosePopup = () => setShowPopup(false);
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-100 via-purple-200 to-purple-300 p-8">
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-blue-200 to-indigo-300 p-8">
       <div className="max-w-4xl mt-20 mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
         {/* Header */}
-        <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white text-center py-6">
+        <div className="bg-gradient-to-r from-blue-500 via-violet-500 to-emerald-500 text-white text-center py-6">
           <h1 className="text-3xl font-extrabold">Registration Details</h1>
         </div>
 
@@ -19,7 +19,7 @@ const Registration = () => {
         <div className="p-6 space-y-6">
           {/* Last Date */}
           <div>
-            <h2 className="text-xl font-bold text-purple-700 mb-2">
+            <h2 className="text-xl font-bold text-blue-700 mb-2">
               Last Date of Registration:
             </h2>
             <p className="text-gray-700 text-lg">August 25, 2025</p>
@@ -27,7 +27,7 @@ const Registration = () => {
 
           {/* Registration Fees */}
           <div>
-            <h2 className="text-xl font-bold text-purple-700 mb-2">
+            <h2 className="text-xl font-bold text-blue-700 mb-2">
               Registration Fees
             </h2>
             <ul className="space-y-2 text-gray-700 text-lg">
@@ -57,7 +57,7 @@ const Registration = () => {
             </ul>
             {/* Terms and Conditions Note */}
             <div className="mt-4 text-sm text-gray-700 bg-yellow-100 border-l-4 border-yellow-500 p-3 rounded">
-              <span className="font-semibold text-orange-700">Note:</span> The
+              <span className="font-semibold text-emerald-700">Note:</span> The
               fees mentioned above apply to a standard article of up to 5 pages.
               Additional pages, up to a maximum of 7 pages, will incur an extra
               charge of <span className="font-bold">₹1000 per page</span> for
@@ -68,7 +68,7 @@ const Registration = () => {
 
           {/* Account Details */}
           <div>
-            <h2 className="text-xl font-bold text-purple-700 mb-2">
+            <h2 className="text-xl font-bold text-blue-700 mb-2">
               Account Details
             </h2>
             <h3 className="text-lg font-semibold text-gray-800 mb-1">
@@ -103,14 +103,14 @@ const Registration = () => {
           <div className="text-center">
             <button
               onClick={handleRegisterClick}
-              className="inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:scale-105 transform transition-transform focus:outline-none"
+              className="inline-block bg-gradient-to-r from-blue-500 via-violet-500 to-emerald-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:scale-105 transform transition-transform focus:outline-none"
             >
               Register Here
             </button>
             {showPopup && (
               <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-40">
                 <div
-                  className="bg-white rounded-xl shadow-2xl p-8 max-w-sm w-full text-center relative animate-fadeIn border-4 border-purple-400"
+                  className="bg-white rounded-xl shadow-2xl p-8 max-w-sm w-full text-center relative animate-fadeIn border-4 border-blue-400"
                   style={{ fontFamily: "'Poppins', sans-serif" }}
                 >
                   <h2 className="text-2xl font-bold mb-4 text-red-600">
@@ -121,12 +121,12 @@ const Registration = () => {
                   </p>
                   <button
                     onClick={handleClosePopup}
-                    className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white font-semibold px-5 py-2 rounded-lg shadow hover:scale-105 transition-transform"
+                    className="bg-gradient-to-r from-blue-500 via-violet-500 to-emerald-500 text-white font-semibold px-5 py-2 rounded-lg shadow hover:scale-105 transition-transform"
                   >
                     Close
                   </button>
                   <span
-                    className="absolute top-2 right-4 cursor-pointer text-purple-500 text-xl font-bold"
+                    className="absolute top-2 right-4 cursor-pointer text-blue-500 text-xl font-bold"
                     onClick={handleClosePopup}
                   >
                     &times;
@@ -151,3 +151,5 @@ const Registration = () => {
 };
 
 export default Registration;
+
+

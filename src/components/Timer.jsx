@@ -43,8 +43,8 @@ const Timer = () => {
   }, []);
 
   return (
-    <div className="w-full px-4 py-6 flex flex-col items-center bg-gradient-to-br from-purple-200 via-purple-300 to-purple-400 rounded-lg shadow-lg">
-      <h2 className="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 mb-4 text-center drop-shadow-md">
+    <div className="w-full px-4 py-6 flex flex-col items-center bg-gradient-to-br from-blue-200 via-indigo-300 to-indigo-400 rounded-3xl shadow-lg">
+      <h2 className="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-violet-500 to-emerald-400 mb-4 text-center drop-shadow-md">
         Countdown to AICCT 2025
       </h2>
       <div className="flex flex-wrap justify-center gap-6 text-center">
@@ -60,7 +60,7 @@ const Timer = () => {
             Days
           </p>
         </div>
-        <span className="text-4xl md:text-5xl font-bold text-purple-900 drop-shadow-md">
+        <span className="text-4xl md:text-5xl font-bold text-blue-900 drop-shadow-md">
           :
         </span>
         {/* Hours */}
@@ -75,13 +75,13 @@ const Timer = () => {
             Hours
           </p>
         </div>
-        <span className="text-4xl md:text-5xl font-bold text-purple-900 drop-shadow-md">
+        <span className="text-4xl md:text-5xl font-bold text-blue-900 drop-shadow-md">
           :
         </span>
         {/* Minutes */}
         <div className="flex flex-col items-center">
           <span
-            className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 drop-shadow-md"
+            className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-violet-500 to-emerald-400 drop-shadow-md"
             style={{ width: "3ch" }} // Reduced width for smaller alignment
           >
             {String(timeLeft.minutes).padStart(2, "0")}
@@ -90,13 +90,13 @@ const Timer = () => {
             Minutes
           </p>
         </div>
-        <span className="text-4xl md:text-5xl font-bold text-purple-900 drop-shadow-md">
+        <span className="text-4xl md:text-5xl font-bold text-blue-900 drop-shadow-md">
           :
         </span>
         {/* Seconds */}
         <div className="flex flex-col items-center">
           <span
-            className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 drop-shadow-md"
+            className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-violet-500 to-emerald-400 drop-shadow-md"
             style={{ width: "3ch" }} // Reduced width for smaller alignment
           >
             {String(timeLeft.seconds).padStart(2, "0")}
@@ -111,3 +111,5 @@ const Timer = () => {
 };
 
 export default Timer;
+
+

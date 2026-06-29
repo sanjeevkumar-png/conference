@@ -2,8 +2,9 @@ import React from "react";
 import Carousel from "../components/Carousel";
 import Timer from "../components/Timer";
 import About from "../components/About";
-import ImportantDates from "../components/ImportantDates"; // Corrected the typo in the import
+import ImportantDates from "../components/ImportantDates";
 import Speakers from "../components/Speakers";
+import Newsletter from "../components/Newsletter";
 
 const Home = () => {
   return (
@@ -13,8 +14,11 @@ const Home = () => {
       <ImportantDates />
       <About />
       <Speakers />
+      <Newsletter />
     </div>
   );
 };
 
 export default Home;
+
+

@@ -1,12 +1,12 @@
 const Contact = () => {
   return (
     <div
-      className="bg-gradient-to-br from-purple-100 via-purple-200 to-orange-100 py-10 px-4"
+      className="bg-gradient-to-br from-blue-100 via-blue-200 to-emerald-100 py-10 px-4"
       style={{ fontFamily: "'Montserrat', 'Roboto', Arial, sans-serif" }}
     >
       <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-6 mt-16">
         <h1
-          className="text-4xl font-extrabold text-center text-purple-800 mb-4"
+          className="text-4xl font-extrabold text-center text-blue-800 mb-4"
           style={{
             fontFamily: "'Montserrat', Arial, sans-serif",
             fontWeight: 700,
@@ -22,7 +22,7 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="flex flex-col items-center md:items-start mb-6 md:mb-0 md:w-1/2">
             <h2
-              className="text-xl font-bold text-purple-700 mb-2"
+              className="text-xl font-bold text-blue-700 mb-2"
               style={{
                 fontFamily: "'Montserrat', Arial, sans-serif",
                 fontWeight: 600,
@@ -35,7 +35,7 @@ const Contact = () => {
               style={{ fontFamily: "'Roboto', Arial, sans-serif" }}
             >
               <p>
-                <span className="font-bold text-purple-800">Email:</span>
+                <span className="font-bold text-blue-800">Email:</span>
                 <a
                   style={{
                     lineHeight: "1.0",
@@ -48,11 +48,11 @@ const Contact = () => {
                 </a>
               </p>
               <p>
-                <span className="font-bold text-purple-800">Phone:</span>
+                <span className="font-bold text-blue-800">Phone:</span>
                 <br /> +919161292060/+919935101906
               </p>
               <p>
-                <span className="font-bold text-purple-800">Address:</span>
+                <span className="font-bold text-blue-800">Address:</span>
                 <br /> Faculty of Engineering & Technology <br /> United
                 University <br /> Rawatpur, Prayagraj, Uttar Pradesh, India,
                 211012
@@ -84,3 +84,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
+

@@ -74,10 +74,10 @@ const Callforpapers = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-100 via-purple-200 to-purple-300 p-8">
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-blue-200 to-indigo-300 p-8">
       <div className="max-w-7xl mx-auto pt-20">
         {/* Page Title */}
-        <h1 className="text-4xl font-extrabold text-center text-purple-800 mb-6 pt-4">
+        <h1 className="text-4xl font-extrabold text-center text-blue-800 mb-6 pt-4">
           Call for Papers
         </h1>
         <p className="text-lg text-gray-800 leading-relaxed mb-8 text-center">
@@ -92,10 +92,10 @@ const Callforpapers = () => {
           {tracks.map((track, index) => (
             <div
               key={index}
-              className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 p-1 rounded-lg shadow-lg hover:scale-105 transition-transform"
+              className="bg-gradient-to-r from-blue-500 via-violet-500 to-emerald-400 p-1 rounded-lg shadow-lg hover:scale-105 transition-transform"
             >
               <div className="bg-white rounded-lg p-4 h-full">
-                <h2 className="text-xl font-bold text-purple-700 text-left mb-4">
+                <h2 className="text-xl font-bold text-blue-700 text-left mb-4">
                   {track.title}
                 </h2>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
@@ -113,3 +113,5 @@ const Callforpapers = () => {
 };
 
 export default Callforpapers;
+
+

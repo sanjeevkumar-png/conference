@@ -44,30 +44,30 @@ const TopicsOfInterest = () => {
       <div className="flex flex-col justify-between items-center gap-4 mb-6">
         <h2 className="text-4xl font-semibold">
           Topics of{" "}
-          <span className="text-orange-400 font-serif font-thin">Interest</span>
+          <span className="text-emerald-400 font-serif font-thin">Interest</span>
         </h2>
         <p className="text-2xl font-semibold">
           The topics of interest include (but not limited to) the following:
         </p>
         <div>
-          <button className="bg-orange-600 hover:bg-orange-800 text-white px-4 py-2 rounded mr-2">
+          <button className="bg-emerald-600 hover:bg-emerald-800 text-white px-4 py-2 rounded-full mr-2">
             Author Instructions
           </button>
-          <button className="bg-orange-600 hover:bg-orange-800 text-white px-4 py-2 rounded">
+          <button className="bg-emerald-600 hover:bg-emerald-800 text-white px-4 py-2 rounded-full">
             Submit Your Article
           </button>
         </div>
       </div>
       <div className="grid md:grid-cols-2 gap-6">
         <div>
-          <h3 className="text-xl font-semibold mb-4 text-purple-600">
+          <h3 className="text-xl font-semibold mb-4 text-blue-600">
             General Tracks
           </h3>
           <div className="space-y-4">
             {topics.map((item, index) => (
               <div
                 key={index}
-                className="bg-purple-200 p-4 rounded shadow hover:bg-purple-300 transition"
+                className="bg-blue-200 p-4 rounded-2xl shadow hover:bg-blue-300 transition"
               >
                 {item.track}
               </div>
@@ -75,14 +75,14 @@ const TopicsOfInterest = () => {
           </div>
         </div>
         <div>
-          <h3 className="text-xl font-semibold mb-4 text-purple-600">
+          <h3 className="text-xl font-semibold mb-4 text-blue-600">
             Special Sessions
           </h3>
           <div className="space-y-4">
             {specialSessions.map((session, index) => (
               <div
                 key={index}
-                className="bg-purple-200 p-4 rounded shadow hover:bg-purple-300 transition"
+                className="bg-blue-200 p-4 rounded-2xl shadow hover:bg-blue-300 transition"
               >
                 <p className="font-bold">{session.track}</p>
                 <ul className="list-disc ml-5 mt-2 text-sm">
@@ -100,3 +100,5 @@ const TopicsOfInterest = () => {
 };
 
 export default TopicsOfInterest;
+
+

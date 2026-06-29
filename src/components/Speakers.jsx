@@ -1,94 +1,144 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Speakers = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
 
-  const cards = [
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        });
+      },
+      { threshold: 0.1 },
+    );
+
+    const section = document.getElementById("speakers-section");
+    if (section) {
+      observer.observe(section);
+    }
+
+    return () => {
+      if (section) {
+        observer.unobserve(section);
+      }
+    };
+  }, []);
+
+  const speakers = [
     {
       name: "Prof. Rajeev Srivastava",
       image: "/images/RajeevPhoto1.jpeg",
       designation: "Director",
       department: "IIIT Ranchi",
+      gradient: "from-blue-500 to-cyan-500",
     },
     {
       name: "Prof. Dr. Sanjay Mishra",
       image: "/images/sanjay-misra.png",
       designation: "Senior Scientist",
       department: "Institute for Energy Technology, Halden",
+      gradient: "from-blue-500 to-violet-500",
     },
     {
       name: "Prof. Shekhar Verma",
       image: "/images/sverma.jpg",
       designation: "Professor in CSE",
       department: "Indian Institute of Information Technology - Allahabad",
+      gradient: "from-orange-500 to-red-500",
     },
   ];
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + cards.length) % cards.length
-    );
-  };
-
   return (
-    <div className="w-full max-w-3xl mx-auto mb-4 px-4">
-      {/* Heading */}
-      <h2 className="text-4xl font-bold text-center mb-6 pt-4">
-        Meet Our{" "}
-        <span className="text-purple-600 font-serif font-thin">Speakers</span>
-      </h2>
+    <section
+      id="speakers-section"
+      className="section-padding bg-white relative overflow-hidden"
+    >
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-violet-50 opacity-50"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
+      <div
+        className="absolute bottom-0 left-0 w-96 h-96 bg-violet-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"
+        style={{ animationDelay: "2s" }}
+      ></div>
 
-      {/* Card Container */}
-      <div className="relative w-full overflow-hidden bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 rounded-lg shadow-lg py-6">
+      <div className="container-custom relative z-10">
+        {/* Section Header */}
         <div
-          className="flex transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          className={`text-center mb-16 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
         >
-          {cards.map((card, index) => (
-            <div key={index} className="w-full flex-shrink-0 p-4">
-              <div className="relative bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transition-transform duration-300 flex flex-col items-center">
-                {/* Speaker Image */}
-                <img
-                  src={card.image}
-                  alt={card.name}
-                  className="w-40 h-40 rounded-full mb-4 border-4 border-gray-300 shadow-md"
-                />
-                {/* Speaker Name */}
-                <h3 className="text-2xl font-bold mb-2 text-purple-700 text-center">
-                  {card.name}
-                </h3>
-                {/* Speaker Designation */}
-                <p className="text-gray-600 text-center text-sm">
-                  {card.designation}
-                </p>
-                {/* Speaker Department */}
-                <p className="text-sm text-gray-500 text-center mt-2">
-                  {card.department}
-                </p>
+          <h2 className="font-display text-5xl md:text-6xl font-bold mb-6">
+            They've spoken at{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600">
+              our events
+            </span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            World-renowned experts and thought leaders sharing their insights
+          </p>
+        </div>
+
+        {/* Speakers Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {speakers.map((speaker, index) => (
+            <div
+              key={index}
+              className={`group relative ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
+              style={{ animationDelay: `${index * 0.2}s` }}
+            >
+              {/* Card */}
+              <div className="relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                {/* Gradient Border Effect */}
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${speaker.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                ></div>
+                <div className="relative bg-white m-[2px] rounded-3xl overflow-hidden">
+                  {/* Image Container */}
+                  <div className="relative h-80 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
+                    <img
+                      src={speaker.image}
+                      alt={speaker.name}
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    {/* Gradient Overlay */}
+                    <div
+                      className={`absolute inset-0 bg-gradient-to-t ${speaker.gradient} opacity-0 group-hover:opacity-30 transition-opacity duration-500`}
+                    ></div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-6">
+                    <h3 className="font-display text-2xl font-bold text-gray-900 mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 transition-all duration-300">
+                      {speaker.name}
+                    </h3>
+                    <p className="text-sm font-semibold text-gray-600 mb-1">
+                      {speaker.designation}
+                    </p>
+                    <p className="text-sm text-gray-500">
+                      {speaker.department}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Navigation Arrows */}
-        <button
-          onClick={handlePrev}
-          className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-purple-600 text-white p-3 rounded-full hover:bg-purple-500 shadow-lg"
+        {/* See All Speakers Button */}
+        <div
+          className={`text-center ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
+          style={{ animationDelay: "0.8s" }}
         >
-          &#8592;
-        </button>
-        <button
-          onClick={handleNext}
-          className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-pink-500 text-white p-3 rounded-full hover:bg-pink-400 shadow-lg"
-        >
-          &#8594;
-        </button>
+          <button className="px-10 py-4 bg-gradient-to-r from-indigo-900 via-indigo-900 to-violet-900 text-white font-display font-semibold text-lg rounded-full hover:shadow-2xl transition-all duration-300 transform hover:scale-105 relative overflow-hidden group">
+            <span className="relative z-10">See all speakers</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-pink-900 via-indigo-900 to-indigo-900 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          </button>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

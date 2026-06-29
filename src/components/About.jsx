@@ -61,7 +61,7 @@ const About = () => {
       <div className="flex justify-center mt-8">
         <div className="flex items-center justify-center flex-wrap gap-4">
           <a href="https://cmt3.research.microsoft.com/AICCT2025/Submission/Index">
-            <button className="px-6 py-2 bg-orange-600 text-white rounded-lg shadow-md hover:bg-orange-800">
+            <button className="px-6 py-2 bg-emerald-600 text-white rounded-full shadow-md hover:bg-emerald-800">
               SUBMIT ARTICLE
             </button>{" "}
             {""}
@@ -69,10 +69,10 @@ const About = () => {
           <a
             href="/files/Word_Sample_template_8.25 x11_column.docx"
             download
-            className="text-purple-600 underline hover:text-purple-800"
+            className="text-blue-600 underline hover:text-blue-800"
           >
             {" "}
-            <button className="px-6 py-2 bg-orange-600 text-white rounded-lg shadow-md hover:bg-orange-800">
+            <button className="px-6 py-2 bg-emerald-600 text-white rounded-full shadow-md hover:bg-emerald-800">
               DOC TEMPLATE
             </button>{" "}
           </a>
@@ -83,3 +83,5 @@ const About = () => {
 };
 
 export default About;
+
+
