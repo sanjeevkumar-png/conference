@@ -29,15 +29,15 @@ const Speakers = () => {
 
   const speakers = [
     {
-      name: "Prof. Rajeev Srivastava",
-      image: "/images/RajeevPhoto1.jpeg",
+      name: "Prof. Siddhartha Bhattacharyya",
+      image: "https://i1.rgstatic.net/ii/profile.image/564921299464192-1511699141118_Q128/Siddhartha-Bhattacharyya-2.jpg",
       designation: "Director",
       department: "IIIT Ranchi",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
-      name: "Prof. Dr. Sanjay Mishra",
-      image: "/images/sanjay-misra.png",
+      name: "Prof. Jyoti Sekhar Banerjee",
+      image: "https://i1.rgstatic.net/ii/profile.image/886099685675010-1588274036653_Q512/Jyoti-Sekhar-Banerjee.jpg",
       designation: "Senior Scientist",
       department: "Institute for Energy Technology, Halden",
       gradient: "from-blue-500 to-violet-500",

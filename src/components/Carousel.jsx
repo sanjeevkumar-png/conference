@@ -15,7 +15,7 @@ const Carousel = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url(https://gyaanarth.com/wp-content/uploads/2022/05/United-University-Cover-Page-7.jpg)",
+            "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLEj1jRQzV6_4n5USrdfu6ZoYBrU_gYmPPDgX_TDwqMWrM1KtU6M4__Dnu&s=10)",
         }}
       ></div>
 
@@ -40,19 +40,19 @@ const Carousel = () => {
           className={`mb-12 ${isVisible ? "animate-fade-in-down" : "opacity-0"}`}
         >
           <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white drop-shadow-2xl">
-            1st International Conference on
+           2<sup>nd</sup> International Conference on
           </h1>
-          <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight">
-            <span className="block text-white drop-shadow-2xl mb-3">
-              Advances in Intelligent Computing
+          <h2 className="font-display text-2xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight">
+            <span className="font-display text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white drop-shadow-2xl">
+              Artificial Intelligence, Smart Computing
             </span>
-            <span className="block text-white drop-shadow-2xl">
-              and Communication Technology
+            <span className="font-display text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white drop-shadow-2xl">
+               <br />and Data Science
             </span>
           </h2>
           <div className="inline-block px-10 py-4 bg-gradient-to-r from-violet-600 to-indigo-700 rounded-full shadow-2xl mt-4">
             <span className="font-display text-3xl md:text-4xl font-black text-white">
-              AICCT-2025
+              (AISCDS 2027)
             </span>
           </div>
         </div>
@@ -63,7 +63,7 @@ const Carousel = () => {
           style={{ animationDelay: "0.3s" }}
         >
           <p className="text-2xl md:text-3xl font-bold text-cyan-300 drop-shadow-lg">
-            📅 13-14 September 2025
+            📅 08-09 January 2027
           </p>
           <p className="text-xl md:text-2xl font-semibold text-white drop-shadow-lg">
             Organized by
@@ -77,7 +77,7 @@ const Carousel = () => {
         </div>
 
         {/* CTA Buttons */}
-        <div
+        {/* <div
           className={`flex flex-wrap gap-4 justify-center ${isVisible ? "animate-scale-in" : "opacity-0"}`}
           style={{ animationDelay: "0.6s" }}
         >
@@ -113,11 +113,11 @@ const Carousel = () => {
               />
             </svg>
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* Download Buttons Section */}
-      <div className="relative z-20 w-full bg-black bg-opacity-30 backdrop-blur-md py-6">
+      {/* <div className="relative z-20 w-full bg-black bg-opacity-30 backdrop-blur-md py-6">
         <div className="container-custom">
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
             <a
@@ -185,7 +185,7 @@ const Carousel = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
